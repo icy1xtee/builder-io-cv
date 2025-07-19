@@ -21,23 +21,18 @@
     "strict": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "noFallthroughCasesInSwitch": false,
     "strictNullChecks": false,
 
-    /* Path mapping */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./client/*"],
-      "@shared/*": ["./shared/*"]
+      "@/*": ["./src/*"],
     }
   },
   "include": [
-    "client/**/*",
-    "server/**/*",
-    "shared/**/*",
+    "src/**/*",
     "vite.config.ts",
-    "vite.config.server.ts"
   ],
   "exclude": ["node_modules", "dist"]
 }
